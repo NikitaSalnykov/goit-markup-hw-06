@@ -316,8 +316,8 @@
           growth
           solutions.</p>
       </div>
-      <div class="footer-block">
-        <h3 class="footer-title-sns">Social media</h3>
+      <div>
+        <h3 class="footer-title">Social media</h3>
         <ul class="list footer-list-sns">
           <li class="footer-item-sns">
             <a href="" class="footer-link-sns">
@@ -349,6 +349,21 @@
           </li>
         </ul>
       </div>
+      <div class="form-subscribe-container">
+        <h3 class="footer-title">Subscribe</h3>
+        <form class="form-field">
+          <label>
+            <input class="subscribe-form-input" type="email" name="mail" placeholder="E-mail">
+          </label>
+
+          <button type="submit" class="button-style footer-button-subscribe">
+            Subscribe
+            <svg class="footer-icon" width="24px" height="24px">
+              <use href="./images/svg/symbol-defs.svg#icon-subscribe"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
     </div>
   </footer>
 
@@ -361,6 +376,63 @@
           <use href="./images/svg/symbol-defs.svg#icon-close-model"></use>
         </svg>
       </button>
+      <div class="modal-container">
+        <b>Leave your contacts and we will call you back</b>
+
+        <form class="form"> <!--Form-->
+
+          <div role="group" class="form-field">
+            <label class="form-label"> <!--name input-->
+              <p class="modal-form-text">Name</p>
+              <input class="modal-input input-text" type="text" name="name" placeholder=" " autocomplete=off>
+              <span class="icon-input"><svg width="13" height="13">
+                  <use href="./images/svg/symbol-defs.svg#icone-name"></use>
+                </svg></span>
+            </label>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label"> <!--phone input-->
+              <p class="modal-form-text">Phone</p>
+              <input class="modal-input input-text" type="tel" name="tel" placeholder=" " autocomplete=off>
+              <span class="icon-input"><svg width="13" height="13">
+                  <use href="./images/svg/symbol-defs.svg#icone-phone"></use>
+                </svg></span>
+            </label>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label">
+              <p class="modal-form-text">Email</p> <!--email input-->
+              <input class="modal-input input-text" type="email" name="mail" placeholder=" " autocomplete=off>
+              <span class="icon-input"><svg width="13" height="13">
+                  <use href="./images/svg/symbol-defs.svg#icon-mail"></use>
+                </svg></span>
+            </label>
+          </div>
+
+          <label>
+            <p>Comment</p> <!--TextArea Comment-->
+            <textarea class="modal-textarea input-text" name="comment" placeholder="Text input"></textarea>
+          </label>
+
+          <div class="form-checkbox input-text"> <!--Checkbox-->
+            <label class="label-checkbox">
+              <input type="checkbox" class="checkbox visually-hidden" name="accept" id="">
+              <span class="checkbox-icon">
+                <svg width="10" height="8">
+                  <use href="./images/svg/symbol-defs.svg#icon-accept"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the&nbsp;
+              <a href="">Privacy Policy</a>
+            </label>
+
+          </div>
+
+          <button class="button-style modal-button" type="submit">Send</button>
+        </form>
+      </div>
     </div>
   </div>
 
