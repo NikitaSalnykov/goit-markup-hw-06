@@ -9,7 +9,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="./css/style.css">
   <title>Studio</title>
 </head>
@@ -62,7 +62,7 @@
               <svg width="64" height="64">
                 <use href="./images/svg/symbol-defs.svg#icon-clock"></use>
               </svg>
-            </div width="64" height="64">
+            </div>
             <h3 class="features-item-title">Punctuality</h3>
             <p>Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
           </li>
@@ -95,8 +95,8 @@
           <li><img src="./images/app.jpg" alt="Application" width="360"></li>
           <li><img src="./images/mobile.jpg" alt="Mobile" width="360"></li>
         </ul>
+      </div>
     </section>
-    </div>
     <!-- Team -->
     <section class="section section-team">
       <div class="container">
@@ -351,11 +351,8 @@
       </div>
       <div class="form-subscribe-container">
         <h3 class="footer-title">Subscribe</h3>
-        <form class="form-field">
-          <label>
-            <input class="subscribe-form-input" type="email" name="mail" placeholder="E-mail">
-          </label>
-
+        <form class="form-field-footer">
+          <input class="subscribe-form-input" type="email" name="mail" placeholder="E-mail" aria-label="E-mail">
           <button type="submit" class="button-style footer-button-subscribe">
             Subscribe
             <svg class="footer-icon" width="24px" height="24px">
@@ -376,63 +373,61 @@
           <use href="./images/svg/symbol-defs.svg#icon-close-model"></use>
         </svg>
       </button>
-      <div class="modal-container">
-        <b>Leave your contacts and we will call you back</b>
+      <b class="form-title">Leave your contacts and we will call you back</b>
 
-        <form class="form"> <!--Form-->
+      <form class="form"> <!--Form-->
 
-          <div role="group" class="form-field">
-            <label class="form-label"> <!--name input-->
-              <p class="modal-form-text">Name</p>
-              <input class="modal-input input-text" type="text" name="name" autocomplete=off>
-              <span class="icon-input"><svg width="13" height="13">
-                  <use href="./images/svg/symbol-defs.svg#icone-name"></use>
-                </svg></span>
-            </label>
-          </div>
+        <div class="form-field">
+          <label class="input-text modal-form-text"> <!--name input-->
+            Name
+            <input class="modal-input input-text" type="text" name="name" autocomplete=off>
+            <span class="icon-input"><svg width="13" height="13">
+                <use href="./images/svg/symbol-defs.svg#icone-name"></use>
+              </svg></span>
+          </label>
+        </div>
 
-          <div class="form-field">
-            <label class="form-label"> <!--phone input-->
-              <p class="modal-form-text">Phone</p>
-              <input class="modal-input input-text" type="tel" name="tel" autocomplete=off>
-              <span class="icon-input"><svg width="13" height="13">
-                  <use href="./images/svg/symbol-defs.svg#icone-phone"></use>
-                </svg></span>
-            </label>
-          </div>
+        <div class="form-field">
+          <label class="input-text modal-form-text"> <!--phone input-->
+            Phone
+            <input class="modal-input input-text" type="tel" name="tel" autocomplete=off>
+            <span class="icon-input"><svg width="13" height="13">
+                <use href="./images/svg/symbol-defs.svg#icone-phone"></use>
+              </svg></span>
+          </label>
+        </div>
 
-          <div class="form-field">
-            <label class="form-label">
-              <p class="modal-form-text">Email</p> <!--email input-->
-              <input class="modal-input input-text" type="email" name="mail" autocomplete=off>
-              <span class="icon-input"><svg width="13" height="13">
-                  <use href="./images/svg/symbol-defs.svg#icon-mail"></use>
-                </svg></span>
-            </label>
-          </div>
+        <div class="form-field">
+          <label class="input-text modal-form-text">
+            Email<!--email input-->
+            <input class="modal-input input-text" type="email" name="mail" autocomplete=off>
+            <span class="icon-input"><svg width="13" height="13">
+                <use href="./images/svg/symbol-defs.svg#icon-mail"></use>
+              </svg></span>
+          </label>
+        </div>
 
-          <label>
-            <p>Comment</p> <!--TextArea Comment-->
-            <textarea class="modal-textarea input-text" name="comment" placeholder="Text input"></textarea>
+        <label class="input-text modal-form-text">
+          Comment<!--TextArea Comment-->
+          <textarea class="modal-textarea input-text" name="comment" placeholder="Text input"></textarea>
+        </label>
+
+        <div class="form-checkbox input-text"> <!--Checkbox-->
+          <label class="label-checkbox" for="policy">
+            <input type="checkbox" class="checkbox visually-hidden" name="accept" id="policy">
+            <span class="checkbox-icon">
+              <svg width="10" height="8">
+                <use href="./images/svg/symbol-defs.svg#icon-accept"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the&nbsp;
+            <a href="">Privacy Policy</a>
           </label>
 
-          <div class="form-checkbox input-text"> <!--Checkbox-->
-            <label class="label-checkbox">
-              <input type="checkbox" class="checkbox visually-hidden" name="accept" id="">
-              <span class="checkbox-icon">
-                <svg width="10" height="8">
-                  <use href="./images/svg/symbol-defs.svg#icon-accept"></use>
-                </svg>
-              </span>
-              I accept the terms and conditions of the&nbsp;
-              <a href="">Privacy Policy</a>
-            </label>
+        </div>
 
-          </div>
-
-          <button class="button-style modal-button" type="submit">Send</button>
-        </form>
-      </div>
+        <button class="button-style modal-button" type="submit">Send</button>
+      </form>
     </div>
   </div>
 
