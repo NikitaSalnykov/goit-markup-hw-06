@@ -44,12 +44,6 @@ width: 1158px;
   margin: 0 auto;
 }
 
-@media screen and (max-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
 .section {
   padding: 120px 0;
 }
